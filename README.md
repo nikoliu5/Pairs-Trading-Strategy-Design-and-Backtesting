@@ -89,7 +89,8 @@ Analysis & Trading Signals Generation
     └── Calculate Mean Reversion Parameters
 ```
 
-<img src="./src_img/Signals_Generation.png" width="650">
+<img src="./src_img/Signals_Generation.png" width="300" height="300">
+
 
 ### Ornstein-Uhlenbeck Process Solution Overview
 
