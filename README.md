@@ -61,7 +61,7 @@ Engle-Granger Procedure
 - **Cointegration Vector and Equilibrium Level:**
   $$\text{Cointegrating vector: } \beta'_{\text{coint}} = [1, -\hat{\beta}_c]$$
   $$\text{Equilibrium level: } \mathbb{E}[\hat{\theta}_t] = \hat{\mu}_e$$
-  The cointegrating vector $\beta'_{\text{coint}}$ shows the relationship between the variables, and $\mathbb{E}[\hat{\theta}_t]$ represents the expected equilibrium level, defined by the estimated mean $\hat{\mu}_e$.
+  The cointegrating vector shows the relationship between the variables, and $\mathbb{E}[\hat{\theta}_t]$ represents the expected equilibrium level, defined by the estimated mean $\hat{\mu}_e$.
 
 ### Error Correction Model (ECM)
 
@@ -73,7 +73,7 @@ The ECM is crucial for understanding how deviations from a long-term equilibrium
 - **Expanded ECM Equation:**
   $$\Delta P^A_t = \phi \Delta P^B_t - (1 - \alpha) \left( P^A_{t-1} - \beta_c P^B_{t-1} - \mu_e \right)$$
 
-
+```
 Analysis & Trading Signals Generation
 |
 ├── Signal Generation (Based on OU Process)
@@ -87,6 +87,7 @@ Analysis & Trading Signals Generation
     ├── Fit Data to OU Process
     |
     └── Calculate Mean Reversion Parameters
+```
 
 <img src="./src_img/Signals_Generation.png" width="650">
 
