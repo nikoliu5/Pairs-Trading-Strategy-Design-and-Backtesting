@@ -25,7 +25,7 @@ We utilize 9 years of end-of-day data from Yahoo Finance, spanning from 2014 to 
 
 ## Modelling
 
-'''
+```
 Engle-Granger Procedure
 |
 ├── 1. Cointegration Assessment
@@ -43,7 +43,8 @@ Engle-Granger Procedure
     ├── Model Short-term Adjustments
     |   |
     |   └── Use ECM to Link Changes & Lagged Error Term
-'''
+```
+
 
 ### Stationarity and Cointegration
 
