@@ -89,7 +89,7 @@ Analysis & Trading Signals Generation
     └── Calculate Mean Reversion Parameters
 ```
 
-<img src="./src_img/Signals_Generation.png" width="300" height="300">
+<img src="./src_img/Signals_Generation.png" width="400" height="250">
 
 
 ### Ornstein-Uhlenbeck Process Solution Overview
@@ -117,3 +117,26 @@ The solution to the Stochastic Differential Equation (SDE) of the Ornstein-Uhlen
 Further details and the derivation process are provided in the accompanying notebook.
 
 
+## Systematic Backtesting
+
+Our systematic backtesting uses data from 2014 to 2024, divided into training (2014-2018) and testing (2019-2024) segments for model development and performance evaluation, respectively. Our analysis employs Backtrader and PyFolio to gauge the strategy's effectiveness across different market conditions.
+
+### In-Sample Backtest Highlights
+- **Optimal Z value:** 0.2, yielding the highest Sharpe Ratio of 1.397 and total returns of 48%.
+- **Performance:** The strategy surpassed the benchmark, achieving a Sharpe Ratio of 1.397 and a Cumulative Return of 47.98% against the benchmark's 0.652 Sharpe Ratio and 30.51% Cumulative Return.
+- ![In-Sample Backtesting Results](./src_img/In_sample_results.png)
+
+### Out-of-Sample Backtest Insights
+- **Parameter Estimation:** Utilizes dynamic parameter estimation to avoid look-ahead bias, enhancing accuracy.
+- **Results:** Despite a lower Sharpe ratio of 0.721, the strategy outperforms the benchmark in total (60.22%) and annualized returns (12.82%), but faced a significant drawdown during the 2020 market volatility.
+- ![Out-of-Sample Backtesting Results](./src_img/Out_of_sample_results.png)
+
+### Rolling Beta Analysis
+- Demonstrates low market exposure, oscillating between -0.6 to 0.6, underscoring the strategy's market neutrality and focus on short-term inefficiencies.
+- ![Rolling Beta Plot](./src_img/Rolling_beta.png)
+
+### Exposure to Fama-French 5 Factor Model
+- Indicates statistically significant alpha and specific factor correlations, highlighting the strategy's nuanced performance within a market-neutral framework.
+- ![Fama-French 5 Factor Exposure](./src_img/FF_exposure.png)
+
+This backtesting summary provides a snapshot of our pairs trading strategy's robustness, market neutrality, and potential for consistent returns, emphasizing the importance of strategic risk management.
