@@ -124,13 +124,13 @@ Our systematic backtesting uses data from 2014 to 2024, divided into training (2
 ### In-Sample Backtest Highlights
 - **Optimal Z value:** 0.2, yielding the highest Sharpe Ratio of 1.397 and total returns of 48%.
 - **Performance:** The strategy surpassed the benchmark, achieving a Sharpe Ratio of 1.397 and a Cumulative Return of 47.98% against the benchmark's 0.652 Sharpe Ratio and 30.51% Cumulative Return.
-<img src="./src_img/In_sample_results.png" alt="In-Sample Backtesting Results" width="300" height="500">
+<img src="./src_img/In_sample_results.png" alt="In-Sample Backtesting Results" width="250" height="500">
 
 
 ### Out-of-Sample Backtest Insights
 - **Parameter Estimation:** Utilizes dynamic parameter estimation to avoid look-ahead bias, enhancing accuracy.
 - **Results:** Despite a lower Sharpe ratio of 0.721, the strategy outperforms the benchmark in total (60.22%) and annualized returns (12.82%), but faced a significant drawdown during the 2020 market volatility.
-<img src="./src_img/Out_of_sample_results.png" alt="Out-of-Sample Backtesting Results" width="300" height="500">
+<img src="./src_img/Out_of_sample_results.png" alt="Out-of-Sample Backtesting Results" width="250" height="500">
 
 
 - ![Out-of-Sample Backtesting PyFolio Results](./src_img/Out_of_sample_Pyfolio.png)
