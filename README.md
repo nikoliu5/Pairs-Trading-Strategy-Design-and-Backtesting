@@ -124,12 +124,17 @@ Our systematic backtesting uses data from 2014 to 2024, divided into training (2
 ### In-Sample Backtest Highlights
 - **Optimal Z value:** 0.2, yielding the highest Sharpe Ratio of 1.397 and total returns of 48%.
 - **Performance:** The strategy surpassed the benchmark, achieving a Sharpe Ratio of 1.397 and a Cumulative Return of 47.98% against the benchmark's 0.652 Sharpe Ratio and 30.51% Cumulative Return.
-- ![In-Sample Backtesting Results](./src_img/In_sample_results.png)
+<img src="./src_img/In_sample_results.png" alt="In-Sample Backtesting Results" width="100" height="500">
+
 
 ### Out-of-Sample Backtest Insights
 - **Parameter Estimation:** Utilizes dynamic parameter estimation to avoid look-ahead bias, enhancing accuracy.
 - **Results:** Despite a lower Sharpe ratio of 0.721, the strategy outperforms the benchmark in total (60.22%) and annualized returns (12.82%), but faced a significant drawdown during the 2020 market volatility.
-- ![Out-of-Sample Backtesting Results](./src_img/Out_of_sample_results.png)
+<img src="./src_img/Out_of_sample_results.png" alt="Out-of-Sample Backtesting Results" width="100" height="500">
+
+<img src="./src_img/Out_of_sample_Pyfolio.png" alt="Out-of-Sample Backtesting PyFolio Results" width="100" height="500">
+
+- ![Out-of-Sample Backtesting PyFolio Results](./src_img/Out_of_sample_Pyfolio.png)
 
 ### Rolling Beta Analysis
 - Demonstrates low market exposure, oscillating between -0.6 to 0.6, underscoring the strategy's market neutrality and focus on short-term inefficiencies.
