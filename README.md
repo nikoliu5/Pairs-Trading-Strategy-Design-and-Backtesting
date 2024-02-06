@@ -134,7 +134,7 @@ Our systematic backtesting uses data from 2014 to 2024, divided into training (2
 - **Results:** Despite a lower Sharpe ratio of 0.721, the strategy outperforms the benchmark in total (60.22%) and annualized returns (12.82%), but faced a significant drawdown during the 2020 market volatility.
 
 <div align="center">
-    <img src="./src_img/Out_of_sample_results.png" alt="Out-of-Sample Backtesting Results" width="200" height="500">
+    <img src="./src_img/Out_of_sample_results.png" alt="Out-of-Sample Backtesting Results" width="250" height="500">
   <p>Out-of-Sample Backtesting Results</p>
 </div>
 
